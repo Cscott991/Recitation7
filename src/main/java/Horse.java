@@ -32,14 +32,16 @@ public class Horse {
      * @return the number of spaces advanced
      */
     public int advance() {
-        // TODO: replace this line with your code.
+        int roll = random.nextInt(6) + 1;
+        position += roll;
+        return roll;
     }
 
     /**
      * Returns true if the horse has reached or passed the finish line.
      */
     public boolean hasFinished() {
-        // TODO: replace this line with your code.
+        return position >= FINISH_LINE;
     }
 
     /**
@@ -63,21 +65,21 @@ public class Horse {
      * Increases this horse's number of wins by 1
      */
     public void recordWin()  {
-        // TODO: replace this line with your code.
+        wins++;
     }
 
     /**
      * Increases this horse's number of losses by 1
      */
     public void recordLoss() {
-        // TODO: replace this line with your code.
+        losses++;
     }
 
     /**
      * Increases this horse's number of draws by 1
      */
     public void recordDraw() {
-        // TODO: replace this line with your code.
+        draws++;
     }
 
     public String getName()  {
