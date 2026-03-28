@@ -70,5 +70,6 @@ public class HorseRace {
             horse1.recordLoss();
             System.out.println("Winner: " + horse2.getName());
             return horse2;
+        }
     }
 }
